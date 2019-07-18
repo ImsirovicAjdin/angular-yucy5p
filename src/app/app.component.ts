@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   template: `
     <p>let's add some content</p>
-    <app-child></app-child>
+    <app-child *ngFor="let vehicle of vehicles" [car]="vehicle"></app-child>
   `
 })
 export class AppComponent  {
